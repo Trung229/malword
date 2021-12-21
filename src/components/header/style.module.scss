@@ -1,0 +1,91 @@
+$space: 0.5rem;
+$color-small-impact:#bebebe;
+$color-yellow:#ffd600;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .8) 0, rgba(220, 9, 20, 0));
+    align-items: center;
+    padding: $space * 4;
+    position: relative;
+    top: 0;
+
+    .containerLeft{
+        display:flex;
+        align-items: center;
+        .logo_header {
+            width: 10%;
+            height: 10%;
+            background-size: contain;
+        }
+    
+    
+        .containerNav {
+            display: flex;
+            color: white;
+            list-style-type: none;
+            justify-content: space-around;
+            margin-bottom: 0;
+            padding: 0;
+            height: 100%;
+            margin-left: 50px;
+    
+    
+            .itemNav {
+                margin: 0 28px;
+                color: $color-small-impact;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all .1s;
+    
+    
+                &:hover {
+                    color: $color-yellow;
+                    padding-top: 2px;
+                    margin-bottom: -10px;
+                }
+            }
+        }
+    }
+
+
+
+    .containerInputSearch {
+        position: absolute;
+        right: 10px;
+        width: 20%;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        -ms-transition: all .4s;
+        -o-transition: all .4s;
+
+        &:focus-within{        
+            width: 28%;
+        }
+
+        .containerInputPosition{
+            position: relative;
+            
+            .inputSearch {
+                width: 100%;
+                font-size: 16px;
+                background-color: rgba(0, 0, 0, .5);
+                border: 0;
+                outline: none;
+                color: $color-small-impact;
+                border-bottom: 1px solid;
+
+            
+            }
+            .logoSearch{
+                position: absolute;
+                top: 5px;
+                right: 10px;
+            }
+        }
+        
+    }
+
+}
