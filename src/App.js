@@ -6,7 +6,7 @@ import UpdatePage from './Page/UpdatePage'
 function App() {
   return (
     <Layout>
-      <h1>Trung</h1>
+      <h1>Trung 1</h1>
       <UpdatePage />
     </Layout>
   );
