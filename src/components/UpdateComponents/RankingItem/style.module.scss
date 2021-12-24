@@ -1,0 +1,97 @@
+@import "../../../utils/variables.scss";
+
+
+
+.container {
+    display: flex;
+    margin: 5px 0;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+    align-items: center;
+
+
+    &:hover {
+        background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .2)), to(transparent));
+        background: linear-gradient(90deg, rgba(0, 0, 0, .2), transparent);
+    }
+
+    &:hover .containerRanking img {
+        opacity: 1;
+    }
+
+    &:hover .containerInfo .nameManga {
+        color: $color-yellow;
+    }
+
+    .containerRanking {
+        position: relative;
+
+        img {
+            opacity: .7;
+        }
+
+        .circle {
+            line-height: 32px;
+            background: $--color-black;
+            text-align: center;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: block;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: 27%;
+            color: $color-white;
+
+
+            .rankingReward {
+                background-size: contain;
+                height: 25px;
+                width: auto;
+            }
+        }
+    }
+
+    .containerInfo {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        color: $color-white;
+
+        .iconHot {
+            width: 10px;
+            height: auto;
+            margin-right: 3px;
+        }
+
+        .nameManga {
+            font-size: 16px;
+            line-height: 1.3rem;
+            font-weight: bold;
+        }
+
+        .authorName {
+            color: $color-small-impact;
+            font-size: 10px;
+            letter-spacing: .05rem;
+            text-overflow: ellipsis;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: .9rem;
+            margin: 10px 0;
+        }
+
+        .containerViews {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

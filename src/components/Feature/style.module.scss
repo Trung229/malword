@@ -1,0 +1,164 @@
+@import "../../utils/variables.scss";
+
+.containerHeader {
+    background: -webkit-gradient(linear, left top, right top, from(#5d0914), to(rgba(93, 9, 20, 0)));
+    background: linear-gradient(90deg, #5d0914, rgba(93, 9, 20, 0));
+    padding: 25px 50px 25px 25px;
+
+    h1 {
+        color: $color-white;
+        font-size: $--font-size-xxl;
+        font-weight: 700;
+    }
+}
+
+.containerContent {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding: 0;
+    margin: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    min-height: 200px;
+    justify-content: space-between;
+
+
+    .containerLeftArrow {
+        display: flex;
+        cursor: pointer;
+        background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, #000));
+        background: linear-gradient(270deg, transparent, #000 70%);
+        position: relative;
+        padding: 0 0 0 90px;
+        margin-right: -110px;
+        left: -50px;
+        z-index: 2;
+        transition: all .4s;
+
+
+        &:hover {
+            background: linear-gradient(270deg, transparent, #000 70%);
+            padding: 0 0 0 40px;
+            margin-right: -60px;
+            left: 0;
+        }
+
+        &:hover .leftArrow {
+            position: relative;
+            right: 12px;
+            border-top: 6px solid $color-yellow;
+            border-right: 6px solid $color-yellow;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+
+        .leftArrow {
+            position: relative;
+            min-width: 20px;
+            height: 20px;
+            border-top: 6px solid $color-white;
+            border-right: 6px solid $color-white;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+            -ms-flex-item-align: center;
+            align-self: center;
+            right: 5px;
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+    }
+
+    .containerManga {
+        overflow: hidden;
+
+        .itemList {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            padding-left: 25px;
+            transition: .5s;
+            scroll-behavior: smooth;
+            height: 100%;
+            transition: all .2s;
+            box-sizing: border-box;
+            max-height: 250px;
+
+            .item {
+                display: inline-block;
+                min-width: 150px;
+                max-height: 250px;
+                margin: 15px 10px 15px 0;
+
+                &:hover {
+                    opacity: .8;
+                }
+
+                &:hover img {
+                    padding-bottom: 5px;
+                    margin-top: -5px;
+                }
+
+
+                img {
+                    height: auto;
+                    width: 100%;
+                    cursor: pointer;
+                    transition: all .2s;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    .containerRightArrow {
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, #000));
+        background: linear-gradient(90deg, transparent, #000 70%);
+        padding: 0 90px 0 0;
+        margin-left: -110px;
+        right: -50px;
+        z-index: 2;
+        transition: all .4s;
+
+        &:hover {
+            background: linear-gradient(90deg, transparent, #000 70%);
+            padding: 0 40px 0 0;
+            margin-left: -60px;
+            right: 0;
+        }
+
+        &:hover .rightArrow {
+            position: relative;
+            left: 12px;
+            border-top: 6px solid $color-yellow;
+            border-right: 6px solid $color-yellow;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+
+        .rightArrow {
+            position: relative;
+            min-width: 20px;
+            height: 20px;
+            border-top: 6px solid $color-white;
+            border-right: 6px solid $color-white;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+            align-self: center;
+            left: 5px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.disableArrow{
+    opacity: .2;
+    border-top: 6px solid $color-white;
+    border-right: 6px solid $color-white;
+}

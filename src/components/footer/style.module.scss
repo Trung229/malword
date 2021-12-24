@@ -1,7 +1,4 @@
-$space: 0.5rem;
-$color-small-impact:#bebebe;
-$color-yellow:#ffd600;
-$--color-white: white;
+@import "../../utils/variables.scss";
 
 .container {
     width: 100%;

@@ -1,0 +1,44 @@
+@import "../../../utils/variables.scss";
+
+.allUpdatesButton {
+    cursor: pointer;
+
+
+    p {
+        color: $--color-black;
+        padding: 9px 15px 9px 15px;
+        background-color: $color-yellow;
+        border-radius: 7px 0 0 7px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+
+
+
+
+        &:hover {
+            padding: 9px 20px 9px 20px;
+            border-radius: 15px 0 0 15px;
+        }
+    }
+
+    p::after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        color: $--color-black;
+        border-bottom: 2px solid $--color-black;
+        border-left: 2px solid $--color-black;
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        margin-left: 5px;
+        margin-bottom: 1px;
+    }
+
+
+}
