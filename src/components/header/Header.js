@@ -7,9 +7,11 @@ import LOGO_SEARCH from '../../assets/logo_search.svg';
 function Header() {
     return (
         <div className={styles.container}>
-            <div className={styles.slideShowCharacter}/>
+            <div className={styles.slideShowCharacter} />
             <div className={styles.containerLeft}>
-                <img className={styles['logo_header']} src={LOGO_HEADER} />                
+                <div className={styles.containerImg}>
+                    <img className={styles['logo_header']} src={LOGO_HEADER} />
+                </div>
                 <ul className={styles.containerNav}>
                     {ARR_HEADER.map((item, index) => {
                         return <li className={styles.itemNav} key={index}>{item}</li>

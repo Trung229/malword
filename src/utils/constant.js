@@ -1,4 +1,4 @@
-export const LOGO_HEADER = require('../assets/logo_web.png')
+export const LOGO_HEADER = require('../assets/logoMal.png')
 export const ARR_HEADER = ['UPDATED', 'FEATURE', 'MANGA LIST', 'FAVORITE', 'ABOUT US']
 export const ARR_FOOTER = ['Help / FAQs', 'News and Events', 'Feedback', 'Privacy Policy', 'Terms of Services', 'Copyrights']
 export const COPYRIGHT = require('../assets/copyRight.png')

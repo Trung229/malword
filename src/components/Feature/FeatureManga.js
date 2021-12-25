@@ -3,20 +3,23 @@ import styles from './style.module.scss'
 
 
 function handleMoveRight(element, coordinates, handleCoordinates) {
-    handleCoordinates(coordinates - 400)
-    element.current.style.marginLeft = `${coordinates}px`
+    console.log('coordinates: ', coordinates)
+    if(coordinates > -2400){
+        handleCoordinates(coordinates - 400)
+    }
 }
 
 function handleMoveLeft(element, coordinates, handleCoordinates) {
-    handleCoordinates(coordinates + 400)
-    element.current.style.marginLeft = `${coordinates}px`
+        if(coordinates !== 0){
+            handleCoordinates(coordinates + 400)
+        }
 }
 
 function FeatureManga({ title, data }) {
     const divRef = useRef();
     const [coordinates, setCoordinates] = useState(0);
     useEffect(() => {        
-        divRef.current.style.marginLeft = `${coordinates}px`
+        divRef.current.style.marginLeft = `${coordinates === -2400 ? -2335 : coordinates}px`
     }, [coordinates])
     return (
         <div>
