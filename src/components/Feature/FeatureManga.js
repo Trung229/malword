@@ -3,7 +3,6 @@ import styles from './style.module.scss'
 
 
 function handleMoveRight(element, coordinates, handleCoordinates) {
-    console.log('coordinates: ', coordinates)
     if(coordinates > -2400){
         handleCoordinates(coordinates - 400)
     }

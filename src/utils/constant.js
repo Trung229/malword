@@ -442,3 +442,90 @@ export const JUMP_PLUS = [
         thumbnail: require('../assets/thumbnails/pic3.jpeg')
     }
 ]
+
+export const RE_EDIT = [
+    {
+        id:1,
+        thumbnail: require('../assets/thumbnails/pic1.jpeg')
+    },
+    {
+        id:2,
+        thumbnail: require('../assets/thumbnails/pic2.jpeg')
+    },
+    {
+        id:3,
+        thumbnail: require('../assets/thumbnails/pic3.jpeg')
+    },
+    {
+        id:4,
+        thumbnail: require('../assets/thumbnails/pic1.jpeg')
+    },
+    {
+        id:5,
+        thumbnail: require('../assets/thumbnails/pic2.jpeg')
+    },
+    {
+        id:6,
+        thumbnail: require('../assets/thumbnails/pic3.jpeg')
+    },
+    {
+        id:7,
+        thumbnail: require('../assets/thumbnails/pic1.jpeg')
+    },
+    {
+        id:8,
+        thumbnail: require('../assets/thumbnails/pic2.jpeg')
+    },
+    {
+        id:9,
+        thumbnail: require('../assets/thumbnails/pic3.jpeg')
+    },
+    {
+        id:10,
+        thumbnail: require('../assets/thumbnails/pic1.jpeg')
+    },
+    {
+        id:11,
+        thumbnail: require('../assets/thumbnails/pic2.jpeg')
+    },
+    {
+        id:12,
+        thumbnail: require('../assets/thumbnails/pic3.jpeg')
+    },
+    {
+        id:13,
+        thumbnail: require('../assets/thumbnails/pic1.jpeg')
+    },
+    {
+        id:14,
+        thumbnail: require('../assets/thumbnails/pic2.jpeg')
+    },
+    {
+        id:15,
+        thumbnail: require('../assets/thumbnails/pic3.jpeg')
+    },
+    {
+        id:16,
+        thumbnail: require('../assets/thumbnails/pic1.jpeg')
+    },
+    {
+        id:17,
+        thumbnail: require('../assets/thumbnails/pic2.jpeg')
+    },
+    {
+        id:18,
+        thumbnail: require('../assets/thumbnails/pic3.jpeg')
+    },
+    {
+        id:19,
+        thumbnail: require('../assets/thumbnails/pic1.jpeg')
+    },
+    {
+        id:20,
+        thumbnail: require('../assets/thumbnails/pic2.jpeg')
+    },
+    {
+        id:21,
+        thumbnail: require('../assets/thumbnails/pic3.jpeg')
+    }
+]

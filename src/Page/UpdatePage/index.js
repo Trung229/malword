@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import { Row, Col } from 'antd';
 import ButtonViewAll from '../../components/UpdateComponents/ButtonViewAll/ButtonViewAll'
 import Manga from '../../components/UpdateComponents/Manga/Manga'
-import { DATA, DATA_RANKING, TOP, DATA_WEEKLY_MANGA, JUMP_PLUS } from '../../utils/constant'
+import { DATA, DATA_RANKING, TOP, DATA_WEEKLY_MANGA, JUMP_PLUS, RE_EDIT } from '../../utils/constant'
 import RankingItem from "../../components/UpdateComponents/RankingItem/RankingItem";
 import FeatureManga from "../../components/Feature/FeatureManga";
 
@@ -79,6 +79,7 @@ function UpdatePage() {
                             <FeatureManga data={DATA_WEEKLY_MANGA} title="WEEKLY SHONEN JUMP" />
                             <FeatureManga data={JUMP_PLUS} title="JUMP PLUS" />
                             <FeatureManga data={DATA_WEEKLY_MANGA} title="OTHERS" />
+                            <FeatureManga data={RE_EDIT} title="Re edition" />
                         </div>
                     </Col>
                     <Col span={6}>
