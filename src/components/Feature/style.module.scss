@@ -76,7 +76,7 @@
         .itemList {
             display: flex;
             align-items: center;
-            overflow-x: auto;
+            overflow-x: hidden;
             padding-left: 25px;
             transition: .5s;
             scroll-behavior: smooth;
